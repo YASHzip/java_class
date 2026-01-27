@@ -1,0 +1,13 @@
+Features of OOP
+- Encapsulation
+- Inheritance
+- Abstraction
+- Polymorphism
+
+Encapsulation
+- Bounding of Features
+- belongs to object
+- inside a class
+
+Abstraction
+- 
