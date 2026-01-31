@@ -1,13 +1,11 @@
-import java.util.Scanner;
+class GlobalVariable {
 
-public class GlobalVariable {
-    int n;
-    int sum = 0;
-    
-    public static void main(String[] args){
-        GlobalVariable m = new GlobalVariable();
-        Scanner s = new Scanner(System.in);
+    int x = 50;
 
-        m.n = s.nextInt();
+    public static void main(String[] args) {
+
+        GlobalVariable obj = new GlobalVariable();
+
+        System.out.println("Value of x is: " + obj.x);
     }
 }
