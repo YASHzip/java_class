@@ -1,26 +1,29 @@
 import java.util.Scanner;
 
-class ArrSum{
+class ArrSum {
 
     public static void main(String[] args) {
 
-        Scanner s = new Scanner(System.in);
-        System.out.println("Hello Koder");
+        try(Scanner s = new Scanner(System.in)){
 
-        int n;
-        int arr[] = new int[5];
+            System.out.print("Enter size of array: ");
+            int n = s.nextInt();
 
-        System.out.println("Enter the value of  n");
-        n = s.nextInt();
+            int[] arr = new int[n];
 
-        System.out.println("Enter elements in array");
-        for(int i=0;i<5;i++){
-            arr[i] = s.nextInt();
+            System.out.println("Enter " + n + " elements:");
+            int sum = 0;
+
+            for(int i = 0; i < n; i++) {
+                arr[i] = s.nextInt();
+                sum += arr[i];
+            }
+
+            System.out.println("Sum of array elements = " + sum);
+
+            if(args.length > 0) {
+                System.out.println("First command-line argument: " + args[0]);
+            }
         }
-
-        System.out.println("The value of n is: " + n);
-        System.out.println("The first value is: " + args[0]);
-
-        s.close();
     }
 }
