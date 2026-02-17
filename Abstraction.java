@@ -1,27 +1,33 @@
-abstract class Sample {
-    int a = 10;
-    
-    void f() {
-        System.out.println(a);
-    }
-    
-    abstract void f2();
-}
+abstract class Shape {
+    abstract void draw();
 
-class Child extends Sample {
-    void show() {
-        super.f();
-    }
-    
-    void f2() {
-        System.out.println("done");
+    void display() {
+        System.out.println("This is a shape.");
     }
 }
 
-public class Abrastraction {
+class Circle extends Shape {
+    @Override
+    void draw() {
+        System.out.println("Drawing a Circle.");
+    }
+}
+
+class Rectangle extends Shape {
+    @Override
+    void draw() {
+        System.out.println("Drawing a Rectangle.");
+    }
+}
+
+public class Abstraction{
     public static void main(String[] args) {
-        Child s = new Child();
-        s.show();
-        s.f2();
+        Shape s1 = new Circle();
+        s1.display();
+        s1.draw();
+
+        Shape s2 = new Rectangle();
+        s2.display();
+        s2.draw();
     }
 }
