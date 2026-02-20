@@ -8,7 +8,6 @@ public class ReplaceFileContent {
         String newContent = "This is the new replaced content.";
 
         try (FileWriter writer = new FileWriter(fileName, false)) {
-            // false → overwrite mode (replace content)
             writer.write(newContent);
             System.out.println("File content replaced successfully.");
         } 
