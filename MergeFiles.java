@@ -14,13 +14,11 @@ public class MergeFiles {
         ) {
             String line;
 
-            // Copy content of first file
             while ((line = reader1.readLine()) != null) {
                 writer.write(line);
                 writer.newLine();
             }
 
-            // Copy content of second file
             while ((line = reader2.readLine()) != null) {
                 writer.write(line);
                 writer.newLine();
