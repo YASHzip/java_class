@@ -9,7 +9,7 @@ import java.io.*;
 public class AllExceptionTypes {
 
     static void readFile() throws IOException {
-        FileReader file = new FileReader("test.txt"); // may cause IOException
+        FileReader file = new FileReader("test.txt");
         BufferedReader br = new BufferedReader(file);
         System.out.println(br.readLine());
         br.close();
